@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Czech Flag created in CANVAS</title>
+        <style>
+            body{
+                background: #000000;
+            }
+            h1, p, footer{
+                color: #00FF00;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <h1>The Czech Flag</h1>
+        <marquee>
+        <section id="main">
+            <canvas id="Flag" width="300" height="200" style="border:1px solid #000000;">
+            </canvas>
+        </section>
+        </marquee>
+        <script>
+        
+    var canvas = document.getElementById('Flag');
+    canvas = canvas.getContext('2d');
+
+    canvas.beginPath();
+    canvas.moveTo(0,0);
+    canvas.lineTo(150,100);
+    canvas.lineTo(0,200);
+    canvas.lineTo(0,0);
+    canvas.closePath();
+    canvas.stroke();
+    canvas.fillStyle = "#0000FF";
+    canvas.fill();
+    
+    canvas.beginPath();
+    canvas.moveTo(0,0);
+    canvas.lineTo(300,0);
+    canvas.lineTo(300,100);
+    canvas.lineTo(150,100);
+    canvas.lineTo(0,0);
+    canvas.closePath();
+    canvas.stroke();
+    canvas.fillStyle = "#FFFFFF";
+    canvas.fill();
+
+    canvas.beginPath();
+    canvas.moveTo(150,100);
+    canvas.lineTo(300,100);
+    canvas.lineTo(300,200);
+    canvas.lineTo(0,200);
+    canvas.lineTo(150,100);
+    canvas.closePath();
+    canvas.stroke();
+    canvas.fillStyle = "#FF0000";
+    canvas.fill();
+
+        </script>
+        
+        <footer>
+                    Created in CANVAS by &copy; Michal Jakubec 2017 for <a href="https://www.sololearn.com">SOLOLEARN.COM</a>
+        </footer>
+    </body>
+</html>
